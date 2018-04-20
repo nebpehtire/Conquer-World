@@ -15,6 +15,13 @@
 		3217435D208A1BBD006CB6A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3217435C208A1BBD006CB6A3 /* GoogleService-Info.plist */; };
 		328C3A7A208A2343002B680A /* CWModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A78208A2343002B680A /* CWModel.xcdatamodeld */; };
 		328C3A7C208A2355002B680A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A7B208A2355002B680A /* CoreDataStack.swift */; };
+		328C3A80208A2949002B680A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A7F208A2949002B680A /* LoginViewController.swift */; };
+		328C3A84208A2B44002B680A /* CW_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A83208A2B44002B680A /* CW_Serv_Auth.swift */; };
+		328C3A86208A2BA1002B680A /* DB_Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A85208A2BA1002B680A /* DB_Collection.swift */; };
+		328C3A89208A2C3E002B680A /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A88208A2C3E002B680A /* Functions.swift */; };
+		328C3A8B208A2CA3002B680A /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A8A208A2CA3002B680A /* Typealias.swift */; };
+		328C3A8D208A2CC9002B680A /* UserCW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A8C208A2CC9002B680A /* UserCW.swift */; };
+		328C3A91208A2DB0002B680A /* CW_Serv_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C3A90208A2DB0002B680A /* CW_Serv_User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,13 @@
 		3217435C208A1BBD006CB6A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		328C3A79208A2343002B680A /* CWModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CWModel.xcdatamodel; sourceTree = "<group>"; };
 		328C3A7B208A2355002B680A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		328C3A7F208A2949002B680A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		328C3A83208A2B44002B680A /* CW_Serv_Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CW_Serv_Auth.swift; sourceTree = "<group>"; };
+		328C3A85208A2BA1002B680A /* DB_Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Collection.swift; sourceTree = "<group>"; };
+		328C3A88208A2C3E002B680A /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		328C3A8A208A2CA3002B680A /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		328C3A8C208A2CC9002B680A /* UserCW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCW.swift; sourceTree = "<group>"; };
+		328C3A90208A2DB0002B680A /* CW_Serv_User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CW_Serv_User.swift; sourceTree = "<group>"; };
 		32B58608B24A1121FB67668D /* Pods-Conquer World.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conquer World.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conquer World/Pods-Conquer World.debug.xcconfig"; sourceTree = "<group>"; };
 		922CD94CA913922D520E4E49 /* Pods_Conquer_World.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conquer_World.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6AD42FBF052157DD3DBCA56 /* Pods-Conquer World.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conquer World.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conquer World/Pods-Conquer World.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +87,10 @@
 		32174349208A1ABE006CB6A3 /* Conquer World */ = {
 			isa = PBXGroup;
 			children = (
+				328C3A87208A2C31002B680A /* Extra */,
+				328C3A82208A2B28002B680A /* Services */,
+				328C3A81208A2B1E002B680A /* Entities */,
+				328C3A7D208A2439002B680A /* Views */,
 				328C3A77208A2318002B680A /* CoreData */,
 				3217435C208A1BBD006CB6A3 /* GoogleService-Info.plist */,
 				3217434A208A1ABE006CB6A3 /* AppDelegate.swift */,
@@ -91,6 +109,49 @@
 				328C3A7B208A2355002B680A /* CoreDataStack.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		328C3A7D208A2439002B680A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				328C3A7E208A2931002B680A /* LoginView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		328C3A7E208A2931002B680A /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				328C3A7F208A2949002B680A /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		328C3A81208A2B1E002B680A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				328C3A8C208A2CC9002B680A /* UserCW.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		328C3A82208A2B28002B680A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				328C3A83208A2B44002B680A /* CW_Serv_Auth.swift */,
+				328C3A90208A2DB0002B680A /* CW_Serv_User.swift */,
+				328C3A85208A2BA1002B680A /* DB_Collection.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		328C3A87208A2C31002B680A /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				328C3A88208A2C3E002B680A /* Functions.swift */,
+				328C3A8A208A2CA3002B680A /* Typealias.swift */,
+			);
+			path = Extra;
 			sourceTree = "<group>";
 		};
 		BB96D69EB5DAC342730BA0BC /* Pods */ = {
@@ -114,6 +175,7 @@
 				32174344208A1ABE006CB6A3 /* Frameworks */,
 				32174345208A1ABE006CB6A3 /* Resources */,
 				6F6F81BD5185E82D4B7AEA01 /* [CP] Embed Pods Frameworks */,
+				7E007C9472167BCCC556A8BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,17 +241,53 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Conquer World/Pods-Conquer World-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conquer World/Pods-Conquer World-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E007C9472167BCCC556A8BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Conquer World/Pods-Conquer World-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conquer World/Pods-Conquer World-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94C08637D75E96DA8F9A8B44 /* [CP] Check Pods Manifest.lock */ = {
@@ -220,6 +318,13 @@
 				328C3A7C208A2355002B680A /* CoreDataStack.swift in Sources */,
 				3217434B208A1ABE006CB6A3 /* AppDelegate.swift in Sources */,
 				328C3A7A208A2343002B680A /* CWModel.xcdatamodeld in Sources */,
+				328C3A89208A2C3E002B680A /* Functions.swift in Sources */,
+				328C3A80208A2949002B680A /* LoginViewController.swift in Sources */,
+				328C3A84208A2B44002B680A /* CW_Serv_Auth.swift in Sources */,
+				328C3A8D208A2CC9002B680A /* UserCW.swift in Sources */,
+				328C3A8B208A2CA3002B680A /* Typealias.swift in Sources */,
+				328C3A91208A2DB0002B680A /* CW_Serv_User.swift in Sources */,
+				328C3A86208A2BA1002B680A /* DB_Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
